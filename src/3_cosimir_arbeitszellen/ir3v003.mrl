@@ -1,0 +1,230 @@
+1010  ' **********************************************************
+1020  ' * Industrieroboter-Labor FH Hannover, WS 2005/06
+1030  ' * Leitung: Prof. Dr. Kunze
+1035  ' * Versuch 3: Simulation Arbeitszellen und Bewegungsablaeufen
+1040  ' * Gruppe 5
+1050  ' * Rolf Hemmerling, #916657
+1060  ' * Lars Durczak, #949640
+1070  ' * Datum: 2005-10-06
+1080  '
+1090  ' * ir3.mrl
+1100  ' * Programm in MRL Mitsubishi Robot Language
+1110  ' **********************************************************
+1120  ' *
+1130  ' * Fragen & notwendige fehlende Anpassungen:
+1140  ' * 1) Eingaenge lesen und warten, bis externes Startsignal
+1150  ' * 2) Geschwindigkeiten 20 und 6,
+1160  ' * 3) Wartezeit nach oeffnen/schliessen des Greifers 0.5s
+1170  ' * 4) MA zum Holen von Einzel-Objekten,
+1180  ' *    MTS zum Holen von auf Paletten plazierten Objekten ?!
+1190  ' * 5) Toollaenge, siehe S.12 Laborskript = ??? 178 ???
+1200  ' * 6) Anzahl der Objekte ist im Programmablauf durch
+1210  ' *    Entscheidungen "hardcodiert"
+1220  ' * 7) Darf/kann/soll P5 uebersprungen werden beim hin/zurueck?
+1230  ' * 8) Wie wird das Fliessband in COSIMIR angeschaltet ?
+
+1300  ' **********************************************************
+1310  ' Positionsliste
+1320  ' **********************************************************
+1330  ' * Ablegepunkt ueber dem Fliessband, blau:
+1340  PD 101, -273.03,402.67,361.00,-180.00,0.00,44.64,R,A,N
+1350  ' * relativer Ablegepunkt ueber dem Fliessband, blau:
+1355  PD 1, 0,0,-60,0,0.00,44.64,R,A,N
+1360  ' * Sichere Position ueber Fliessband:
+1365  PD 2, -273.03,402.67,400.40,180.00,-0.00,44.64,R,A,N
+1370  ' * Endpunkt der Bewegung:
+1380  PD 3, -273.03,402.67,400.40,180.00,-0.00,44.64,R,A,N
+1390  ' * Anfangspunkt der Bewegung:
+1400  PD 4, -273.03,402.67,400.40,180.00,-0.00,44.64,R,A,N
+1410  ' * Zentraler Sammelpunkt, von dem aus die Objekte angefahren werden:
+1420  PD 5, 294.84,-297.69,400.40,180.00,0.00,-90.00,R,A,N
+1430  ' * Sichere Position ueber dem Objekt 1, blau:
+1440  PD 6, 294.84,-297.69,400.40,180.00,0.00,-90.00,R,A,N
+1450  ' * Sichere Position ueber dem Objekt 2, rot:
+1460  PD 7, 288.62,97.75,400.00,180.00,0.00,91.89,R,A,N
+1470  ' * Sichere Position ueber dem Objekt 3, gelb:
+1480  PD 8, 313.62,-94.81,400.40,-180.00,-0.00,67.18,R,A,N
+1490  ' * relativer Aufnahmepunkt fuer Objekt 1, blau :
+1500  PD 9, 0,0,-420.40,0,0.00,0,R,A,N
+1510  ' * relativer Aufnahmepunkt fuer Objekt 2, rot :
+1520  PD 10,  0,0,-420.40,0,0.00,0,R,A,N
+1530  ' * relativer Aufnahmepunkt fuer Objekt 3, gelb:
+1540  PD 11,  0,0,-420.40,0,0.00,0,R,A,N
+1550  ' * Aufnahmepunkt fuer Objekt 1, blau :
+1560  PD 109, 294.84,-297.69,35.60,-180.00,0.00,-90.00,R,A,N
+1570  ' * Aufnahmepunkt fuer Objekt 2, rot :
+1580  PD 110, 288.62,97.75,35.60,-180.00,0.00,91.89,R,A,N
+1590  ' * Aufnahmepunkt fuer Objekt 3, gelb:
+1600  PD 111, 313.62,-94.81,35.64,180.00,0.00,67.18,R,A,N
+1610  ' ***************************************
+
+2000  ' ***************************************
+2010  ' * Hauptprogramm
+2020  ' ***************************************
+2030  ' *
+2040  GS 8000
+
+3000  ' * ->Jump von 4290
+3010  ' * Punkt 4 anfahren mit offenem Handgreifer
+3020  GS 8200
+3030  ' * Eingaenge lesen und warten, bis externes Startsignal kommt,
+3040  ' * dass das Fliessband frei ist, bzw. Objekt bereitsteht
+3050  GS 8300
+3060  ' * Sammelpunkt 5 anfahren
+3070  GS 8500
+3080  ' * Zaehler in Akku laden
+3090  CP 1
+3200  ' * Objekt 3 holen
+3210  EQ 3, 7000
+3300  ' * Objekt 2 holen
+3310  EQ 2, 7200
+3400  ' * Objekt 1 holen
+3410  EQ 1, 7400
+3500  ' * Ansonsten: Programmfehler
+3510  GT 5000
+
+4000  ' * ->Jump von 7120, 7320, 7520
+4010  ' ***************************************
+4020  ' * Objekte auf das Fliessband legen
+4030  ' ***************************************
+4040  ' * Geschwindigkeit 222 mm/s einstellen
+4050  SP 20
+4060  ' * Sammelpunkt P5 anfahren, Greifer geschlossen
+4070  MO 5,C
+4080  ' * P4 anfahren, Greifer geschlossen
+4090  MO 4,C
+4100  ' * P3 anfahren, Greifer geschlossen
+4110  MO 3,C
+4120  ' * P2 anfahren, Greifer geschlossen
+4130  MO 2,C
+4140  ' * 13 mm/s Geschwindigkeit reduzieren
+4150  SP 6
+4160  ' * Absenken auf P1, Linear-Bewegung ( Move Approach )
+4170  MA 2,1,C
+4180  ' * Handgreifer oeffnen
+4190  GS 8800
+4200  ' * Linearbewegung zurueck zum Punkt 2, Greifer offen
+4210  MS 2,O
+4220  ' * Geschwindigkeit 222 mm/s einstellen
+4230  SP 20
+4240  ' * P3 anfahren, Greifer offen
+4250  MO 3,O
+4260  ' * Zaehler dekrementieren
+4270  DC 1
+4280  ' * Sprung wenn noch Objekte zu holen
+4290  NE 0, 3000
+5000  ' -> Jump von 3510
+5010  ' * Programmende
+5020  ED
+
+7000  ' -> Jump von 3210
+7010  ' ***************************************
+7020  ' * Objekt 3 holen
+7030  ' ***************************************
+7040  ' ### * ??? 60 ??? mm in Richtung der z-Handachse, Greifer offen
+7050  ' ### MTS 8, 60, O
+7055  MO 8,O
+7060  ' * Absenken auf P11, Linear-Bewegung ( Move Approach )
+7070  MA 8,11,O
+7080  ' * Handgreifer schliessen und warten
+7090  GS 8600
+7100  ' * Linear zu P6 zurueck, Greifer geschlossen
+7110  MS 8,C
+7120  GT 4000
+
+7200  ' -> Jump von 3310
+7210  ' ***************************************
+7220  ' Objekt 2 holen
+7230  ' ***************************************
+7240  ' ### * ??? 60 ??? mm in Richtung der z-Handachse, Greifer offen
+7250  ' ### MTS 7, 60, O
+7255  MO 7,O 
+7260  ' * Absenken auf P10, Linear-Bewegung ( Move Approach )
+7270  MA 7,10,O
+7280  ' * Handgreifer schliessen und warten
+7290  GS 8600
+7300  ' * Linear zu P7 zurueck, Greifer geschlossen
+7310  MS 7,C
+7320  GT 4000
+
+7400  ' -> Jump von 3410
+7410  ' ***************************************
+7420  ' Objekt 1 holen
+7430  ' ***************************************
+7440  ' ### * ??? 60 ??? mm in Richtung der z-Handachse, Greifer offen
+7450  ' ### MTS 6, 60, O
+7455  MO 6,O
+7460  ' * Absenken auf P9, Linear-Bewegung ( Move Approach )
+7470  MA 6,9,O
+7480  ' * Handgreifer schliessen und warten
+7490  GS 8600
+7500  ' * Linear zu P9 zurueck, Greifer geschlossen
+7510  MS 6,C
+7520  GT 4000
+
+8000  ' -> Unterprogramm, Aufruf von 2040
+8010  ' ***************************************
+8020  ' * Parameter initialisieren
+8030  ' ***************************************
+8040  ' * Toollaenge = ??? 178 ???
+8050  TL 178
+8060  ' * Zaehler 1 auf 3 setzen, fuer 3 Objekte
+8070  ' * Aber nur N-1 Schleifendurchlaeufe
+8080  SC 1,3
+8090  ' * Geschwindigkeit 222 mm/s einstellen
+8100  SP 20
+8110  ' * ?? Fliessband anschalten ??
+8120  RT
+
+8200  ' -> Unterprogramm, Aufruf von 3020
+8210  ' ***************************************
+8220  ' * Punkt 4 anfahren mit offenem Handgreifer
+8230  ' ***************************************
+8240  ' * Handgreifer oeffnen
+8250  GO
+8260  ' * Punkt 4 anfahren, mit O= Handgreifer offen, ???PTP???
+8270  MO 4,O
+8280  RT
+
+8300  ' -> Unterprogramm, Aufruf von 3050
+8310  ' ***************************************
+8320  ' * Eingaenge lesen und warten, bis externes Startsignal
+8330  ' * kommt, dass der Arbeitsvorgang begonnen werden soll
+8340  ' ***************************************
+8350  ' #### ID
+8360  ' #### Anzupassen ####
+8370  ' #### TB +5,8230 ####
+8380  ' #### EQ 0, 8230 ####
+8390  RT
+
+8500  ' -> Unterprogramm, Aufruf von 3070
+8510  ' ***************************************
+8520  ' * Sammelpunkt 5 anfahren, mit offenem Handgreifer
+8530  ' ***************************************
+8540  ' * Punkt 5 anfahren, mit O= Handgreifer offen, ???PTP???
+8550  MO 5,O
+8560  ' * 13 mm/s Geschwindigkeit reduzieren
+8570  SP 6
+8580  RT
+
+8600  ' -> Unterprogramm, Aufruf von 7090, 7290, 7490
+8610  ' ***************************************
+8620  ' * Handgreifer schliessen und warten
+8630  ' ***************************************
+8640  ' * Greifer schliessen
+8650  GC
+8660  ' * 0.5 s warten
+8670  TI 5
+8680  RT
+
+8800  ' -> Unterprogramm, Aufruf von 4190
+8810  ' ***************************************
+8820  ' * Handgreifer oeffnen
+8830  ' ***************************************
+8840  ' * Greifer oeffnen
+8850  GO
+8860  ' * 0.5 s warten
+8870  TI 5
+8880  RT
+9000  ' Dummy ED, als letzte Anweisung notwendig
+9010  ED

@@ -1,0 +1,2248 @@
+LUCAS-Process Visualization - Configuration File Version: 105
+0.704496 -1 -1 120 2446 4.740741 92520 150906 -299 -299
+.System.
+RectElem
+0 0 0 3.050000 15.000000 0 91500 150000 0 RectElem
+
+
+
+
+
+
+192 192 192 0 0 0 1 1
+.System.
+KeyElem
+0 0 0 0.000000 0.000000 0 0 0 0 KeyElem
+49 0 0 0
+O:IOMonitor.CtrlCardSetActive
+1
+.System.
+KeyElem
+0 0 0 0.000000 0.000000 0 0 0 0 KeyElem
+50 0 0 0
+O:IOMonitor.CtrlCardSetActive
+2
+.System.
+KeyElem
+0 0 0 0.000000 0.000000 0 0 0 0 KeyElem
+51 0 0 0
+O:IOMonitor.CtrlCardSetActive
+3
+.System.
+AudioElem
+0 0 0 0.000000 0.000000 0 0 0 0 AudioElem
+CLICK.WAV
+I:IOMonitor.CtrlCardIsActive
+1.000000
+0
+.System.
+AudioElem
+0 0 0 0.000000 0.000000 0 0 0 0 AudioElem
+CLICK.WAV
+I:IOMonitor.CtrlCardIsActive
+2.000000
+0
+.System.
+AudioElem
+0 0 0 0.000000 0.000000 0 0 0 0 AudioElem
+CLICK.WAV
+I:IOMonitor.CtrlCardIsActive
+3.000000
+0
+.System.
+RectElem
+2500 2500 0 2.883333 1.000000 0 86500 10000 0 RectElem
+
+
+
+
+
+
+192 192 192 0 0 0 1 2
+.System.
+TextBox
+34000 3500 0 0.966667 0.800000 0 29000 8000 0 TextBox
+
+
+E/A-Karte:
+
+Right 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 192 192 192 0 1
+.System.
+TextBox
+63500 3500 0 0.250000 0.800000 1 7500 8000 0 TextBox
+I:IOMonitor.CtrlCard1Exists
+1
+I
+
+Center 0 VCenter
+
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0 128 128 128 0 0 0 1 1
+.System.
+TextBox
+79500 3500 0 0.250000 0.800000 1 7500 8000 0 TextBox
+I:IOMonitor.CtrlCard3Exists
+1
+III
+
+Center 0 VCenter
+
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0 128 128 128 0 0 0 1 1
+.System.
+TextBox
+71500 3500 0 0.250000 0.800000 1 7500 8000 0 TextBox
+I:IOMonitor.CtrlCard2Exists
+1
+II
+
+Center 0 VCenter
+
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0 128 128 128 0 0 0 1 1
+.System.
+WinButton
+71500 3500 0 0.250000 0.800000 0 7500 8000 0 WinButton
+II	
+I:IOMonitor.CtrlCard2Exists
+1
+2.000000
+O:IOMonitor.CtrlCardSetActive
+7500 8000 0 0 0
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0
+.System.
+WinButton
+79500 3500 0 0.250000 0.800000 0 7500 8000 0 WinButton
+III	
+I:IOMonitor.CtrlCard3Exists
+1
+3.000000
+O:IOMonitor.CtrlCardSetActive
+7500 8000 0 0 0
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0
+.System.
+WinButton
+63500 3500 0 0.250000 0.800000 0 7500 8000 0 WinButton
+I	
+I:IOMonitor.CtrlCard1Exists
+1
+1.000000
+O:IOMonitor.CtrlCardSetActive
+7500 8000 0 0 0
+-20 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 0
+.System.
+TextBox
+63500 3500 0 0.250000 0.800000 0 7500 8000 0 TextBox
+I:IOMonitor.CtrlCardIsActive
+1.000000
+I
+
+Center 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 0 0 0 1 1
+.System.
+TextBox
+71500 3500 0 0.250000 0.800000 0 7500 8000 0 TextBox
+I:IOMonitor.CtrlCardIsActive
+2.000000
+II
+
+Center 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 0 0 0 1 1
+.System.
+TextBox
+79500 3500 0 0.250000 0.800000 0 7500 8000 0 TextBox
+I:IOMonitor.CtrlCardIsActive
+3.000000
+III
+
+Center 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 0 0 0 1 1
+.System.
+TextBox
+12000 3500 0 0.833333 0.800000 0 25000 8000 0 TextBox
+
+
+ONLINE
+
+Center 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 0 0 0 1 1
+.System.
+TextBox
+12000 3500 0 0.833333 0.800000 1 25000 8000 0 TextBox
+I:IOMonitor.IOMonitorIsActive
+1
+OFFLINE
+
+Center 0 VCenter
+
+-22 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+0 0 128 192 192 192 0 0 0 1 1
+.System.
+RectElem
+3750 3750 0 0.250000 0.750000 0 7500 7500 0 RectElem
+I:IOMonitor.IOMonitorState
+1.000000
+
+
+
+
+0 255 0 0 0 0 0 0
+.System.
+RectElem
+3750 3750 0 0.250000 0.750000 0 7500 7500 0 RectElem
+I:IOMonitor.IOMonitorState
+2.000000
+
+
+
+
+255 255 0 0 0 0 0 0
+.System.
+RectElem
+3750 3750 0 0.250000 0.750000 0 7500 7500 0 RectElem
+I:IOMonitor.IOMonitorState
+3.000000
+
+
+
+
+255 0 0 0 0 0 0 0
+.System.
+RectElem
+3750 3750 0 0.250000 0.750000 0 7500 7500 0 RectElem
+I:IOMonitor.IOMonitorState
+0.000000
+
+
+
+
+128 128 128 0 0 0 0 0
+C:\User\COSIMIR\RopPV\library\roppv01.lel
+Systemelement II
+3500 3500 0 1.000000 1.000000 0 8074 8077 2 InfoElem
+
+
+
+
+
+.System.
+RectElem
+2500 15000 0 2.883333 13.250000 0 86500 132500 0 RectElem
+
+
+
+
+
+
+192 192 192 0 0 0 1 2
+.System.
+TextBox
+3500 16000 0 1.283333 0.750000 0 38500 7500 0 TextBox
+
+
+Eingänge
+
+Center 0 VCenter
+
+-21 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+255 255 255 0 0 128 0 0 0 1 0
+.System.
+TextBox
+3500 16000 0 1.283333 0.750000 1 38500 7500 0 TextBox
+I:IOMonitor.IOMonitorIsActive
+1
+Eingänge
+
+Center 0 VCenter
+
+-21 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+128 128 128 0 0 128 0 0 0 1 0
+.System.
+TextBox
+49000 16000 0 1.300000 0.750000 0 39000 7500 0 TextBox
+
+
+Ausgänge
+
+Center 0 VCenter
+
+-21 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+255 255 255 0 0 128 0 0 0 1 0
+.System.
+TextBox
+49000 16000 0 1.283333 0.750000 1 39000 7500 0 TextBox
+I:IOMonitor.IOMonitorIsActive
+1
+Ausgänge
+
+Center 0 VCenter
+
+-21 0 0 0 700 0 0 0 0 3 2 1 34
+Arial
+128 128 128 0 0 128 0 0 0 1 0
+.System.
+RectElem
+48500 25000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed0
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 31000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed1
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 37000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed2
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 43000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed3
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 49000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed4
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 55000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed5
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 61000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed6
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 67000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed7
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 73000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed8
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 79000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed9
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 85000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed10
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 91000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed11
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 97000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed12
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 103000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed13
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 109000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed14
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+RectElem
+48500 115000 0 1.300000 0.600000 0 39000 6000 0 RectElem
+I:IOMonitor.CtrlCardOutIsDed15
+1
+
+
+
+
+128 128 128 0 0 0 0 0
+.System.
+TextBox
+43000 25500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+0
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 31500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+1
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 37500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+2
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 43500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+3
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 49500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+4
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 55500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+5
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 61500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+6
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 67500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+7
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 73500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+8
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 79500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+9
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 85500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+10
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 91500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+11
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 97500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+12
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 103500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+13
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 109500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+14
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 115500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+15
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 121500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+16
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 127500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+17
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 133500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+18
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+TextBox
+43000 139500 0 0.166633 0.500000 0 4999 5000 0 TextBox
+
+
+19
+
+Center 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.System.
+LampElem
+37000 25500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang
+
+I:IOMonitor.CtrlCardIn0
+1
+65280 32768
+.System.
+TextBox
+5000 25500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn0
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 25500 0 1.233333 0.500000 0 37000 5000 0 Parent
+67/68/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 31500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 2
+
+I:IOMonitor.CtrlCardIn1
+1
+65280 32768
+.System.
+TextBox
+5000 31500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn1
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 31500 0 1.233333 0.500000 0 37000 5000 0 Parent
+70/71/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 37500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 3
+
+I:IOMonitor.CtrlCardIn2
+1
+65280 32768
+.System.
+TextBox
+5000 37500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn2
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 37500 0 1.233333 0.500000 0 37000 5000 0 Parent
+73/74/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 43500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 4
+
+I:IOMonitor.CtrlCardIn3
+1
+65280 32768
+.System.
+TextBox
+5000 43500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn3
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 43500 0 1.233333 0.500000 0 37000 5000 0 Parent
+76/77/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 49500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 5
+
+I:IOMonitor.CtrlCardIn4
+1
+65280 32768
+.System.
+TextBox
+5000 49500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn4
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 49500 0 1.233333 0.500000 0 37000 5000 0 Parent
+79/80/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 55500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 6
+
+I:IOMonitor.CtrlCardIn5
+1
+65280 32768
+.System.
+TextBox
+5000 55500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn5
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 55500 0 1.233333 0.500000 0 37000 5000 0 Parent
+82/83/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 61500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 7
+
+I:IOMonitor.CtrlCardIn6
+1
+65280 32768
+.System.
+TextBox
+5000 61500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn6
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 61500 0 1.233333 0.500000 0 37000 5000 0 Parent
+85/86/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 67500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 8
+
+I:IOMonitor.CtrlCardIn7
+1
+65280 32768
+.System.
+TextBox
+5000 67500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn7
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 67500 0 1.233333 0.500000 0 37000 5000 0 Parent
+88/89/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 73500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 9
+
+I:IOMonitor.CtrlCardIn8
+1
+65280 32768
+.System.
+TextBox
+5000 73500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn8
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 73500 0 1.233333 0.500000 0 37000 5000 0 Parent
+91/92/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 79500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 10
+
+I:IOMonitor.CtrlCardIn9
+1
+65280 32768
+.System.
+TextBox
+5000 79500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn9
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 79500 0 1.233333 0.500000 0 37000 5000 0 Parent
+94/95/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 85500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 11
+
+I:IOMonitor.CtrlCardIn10
+1
+65280 32768
+.System.
+TextBox
+5000 85500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn10
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 85500 0 1.233333 0.500000 0 37000 5000 0 Parent
+97/98/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 91500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 12
+
+I:IOMonitor.CtrlCardIn11
+1
+65280 32768
+.System.
+TextBox
+5000 91500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn11
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 91500 0 1.233333 0.500000 0 37000 5000 0 Parent
+100/101/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 97500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 13
+
+I:IOMonitor.CtrlCardIn12
+1
+65280 32768
+.System.
+TextBox
+5000 97500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn12
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 97500 0 1.233333 0.500000 0 37000 5000 0 Parent
+103/104/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 103500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 14
+
+I:IOMonitor.CtrlCardIn13
+1
+65280 32768
+.System.
+TextBox
+5000 103500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn13
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 103500 0 1.233333 0.500000 0 37000 5000 0 Parent
+106/107/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 109500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 15
+
+I:IOMonitor.CtrlCardIn14
+1
+65280 32768
+.System.
+TextBox
+5000 109500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn14
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 109500 0 1.233333 0.500000 0 37000 5000 0 Parent
+109/110/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 115500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 16
+
+I:IOMonitor.CtrlCardIn15
+1
+65280 32768
+.System.
+TextBox
+5000 115500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn15
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 115500 0 1.233333 0.500000 0 37000 5000 0 Parent
+112/113/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 121500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 17
+
+I:IOMonitor.CtrlCardIn16
+1
+65280 32768
+.System.
+TextBox
+5000 121500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn16
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 121500 0 1.233333 0.500000 0 37000 5000 0 Parent
+115/116/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 127500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 18
+
+I:IOMonitor.CtrlCardIn17
+1
+65280 32768
+.System.
+TextBox
+5000 127500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn17
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 127500 0 1.233333 0.500000 0 37000 5000 0 Parent
+118/119/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 133500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 19
+
+I:IOMonitor.CtrlCardIn18
+1
+65280 32768
+.System.
+TextBox
+5000 133500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn18
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 133500 0 1.233333 0.500000 0 37000 5000 0 Parent
+121/122/
+37000 5000
+
+
+
+
+
+.System.
+LampElem
+37000 139500 0 0.619272 0.619042 0 5000 5000 0 LampElem
+Eingang 20
+
+I:IOMonitor.CtrlCardIn19
+1
+65280 32768
+.System.
+TextBox
+5000 139500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardIn19
+
+
+
+Right 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+.Parent.
+Grafik
+5000 139500 0 1.233333 0.500000 0 37000 5000 0 Parent
+124/125/
+37000 5000
+
+
+
+
+
+.System.
+RectElem
+48500 25000 0 1.300000 9.600000 1 39000 96000 0 RectElem
+I:IOMonitor.IOMonitorIsActive
+1
+
+
+
+
+192 192 192 0 0 0 0 0
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 25500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 25500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut0
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 25500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut0
+1
+0
+O:IOMonitor.CtrlCardOut0
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 25500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut0
+0
+1
+O:IOMonitor.CtrlCardOut0
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 25500 0 4.644538 0.619042 0 37500 5000 0 Parent
+128/129/130/131/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 31500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 31500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut1
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 31500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut1
+1
+0
+O:IOMonitor.CtrlCardOut1
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 31500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut1
+0
+1
+O:IOMonitor.CtrlCardOut1
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 31500 0 4.644538 0.619042 0 37500 5000 0 Parent
+133/134/135/136/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 37500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 37500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut2
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 37500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut2
+1
+0
+O:IOMonitor.CtrlCardOut2
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 37500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut2
+0
+1
+O:IOMonitor.CtrlCardOut2
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 37500 0 4.644538 0.619042 0 37500 5000 0 Parent
+138/139/140/141/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 43500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 43500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut3
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 43500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut3
+1
+0
+O:IOMonitor.CtrlCardOut3
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 43500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut3
+0
+1
+O:IOMonitor.CtrlCardOut3
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 43500 0 4.644538 0.619042 0 37500 5000 0 Parent
+143/144/145/146/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 49500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 49500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut4
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 49500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut4
+1
+0
+O:IOMonitor.CtrlCardOut4
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 49500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut4
+0
+1
+O:IOMonitor.CtrlCardOut4
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 49500 0 4.644538 0.619042 0 37500 5000 0 Parent
+148/149/150/151/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 55500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 55500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut5
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 55500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut5
+1
+0
+O:IOMonitor.CtrlCardOut5
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 55500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut5
+0
+1
+O:IOMonitor.CtrlCardOut5
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 55500 0 4.644538 0.619042 0 37500 5000 0 Parent
+153/154/155/156/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 61500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 61500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut6
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 61500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut6
+1
+0
+O:IOMonitor.CtrlCardOut6
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 61500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut6
+0
+1
+O:IOMonitor.CtrlCardOut6
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 61500 0 4.644538 0.619042 0 37500 5000 0 Parent
+158/159/160/161/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 67500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 67500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut7
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 67500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut7
+1
+0
+O:IOMonitor.CtrlCardOut7
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 67500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut7
+0
+1
+O:IOMonitor.CtrlCardOut7
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 67500 0 4.644538 0.619042 0 37500 5000 0 Parent
+163/164/165/166/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 73500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 73500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut8
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 73500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut8
+1
+0
+O:IOMonitor.CtrlCardOut8
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 73500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut8
+0
+1
+O:IOMonitor.CtrlCardOut8
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 73500 0 4.644538 0.619042 0 37500 5000 0 Parent
+168/169/170/171/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 79500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 79500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut9
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 79500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut9
+1
+0
+O:IOMonitor.CtrlCardOut9
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 79500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut9
+0
+1
+O:IOMonitor.CtrlCardOut9
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 79500 0 4.644538 0.619042 0 37500 5000 0 Parent
+173/174/175/176/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 85500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 85500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut10
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 85500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut10
+1
+0
+O:IOMonitor.CtrlCardOut10
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 85500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut10
+0
+1
+O:IOMonitor.CtrlCardOut10
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 85500 0 4.644538 0.619042 0 37500 5000 0 Parent
+178/179/180/181/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 91500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 91500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut11
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 91500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut11
+1
+0
+O:IOMonitor.CtrlCardOut11
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 91500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut11
+0
+1
+O:IOMonitor.CtrlCardOut11
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 91500 0 4.644538 0.619042 0 37500 5000 0 Parent
+183/184/185/186/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 97500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 97500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut12
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 97500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut12
+1
+0
+O:IOMonitor.CtrlCardOut12
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 97500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut12
+0
+1
+O:IOMonitor.CtrlCardOut12
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 97500 0 4.644538 0.619042 0 37500 5000 0 Parent
+188/189/190/191/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 103500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 103500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut13
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 103500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut13
+1
+0
+O:IOMonitor.CtrlCardOut13
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 103500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut13
+0
+1
+O:IOMonitor.CtrlCardOut13
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 103500 0 4.644538 0.619042 0 37500 5000 0 Parent
+193/194/195/196/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 109500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 109500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut14
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 109500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut14
+1
+0
+O:IOMonitor.CtrlCardOut14
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 109500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut14
+0
+1
+O:IOMonitor.CtrlCardOut14
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 109500 0 4.644538 0.619042 0 37500 5000 0 Parent
+198/199/200/201/
+37500 5000
+
+
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch high
+49000 115500 0 0.619272 0.619042 0 5000 5000 1 ButtonControl
+
+
+
+
+
+5000 5000 0 0
+
+
+
+.System.
+TextBox
+56500 115500 0 1.000000 0.500000 1 30000 5000 0 TextBox
+I:IOMonitor.CtrlCardOut15
+
+
+
+Left 0 VCenter
+
+-17 0 0 0 400 0 0 0 0 3 2 1 34
+Arial
+0 0 0 255 255 255 0 0 0 0 1
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch Set 1
+49000 115500 0 0.619272 0.619042 0 5000 5000 8 ButtonControl
+
+I:IOMonitor.CtrlCardOut15
+1
+0
+O:IOMonitor.CtrlCardOut15
+5000 5000 0 0
+
+
+
+C:\USER\COSIMIR\ROPPV\LIBRARY\roppv02.LEL
+Switch low
+49000 115500 0 0.619272 0.619042 0 5000 5000 2 ButtonControl
+
+I:IOMonitor.CtrlCardSetOut15
+0
+1
+O:IOMonitor.CtrlCardOut15
+5000 5000 0 0
+
+
+
+.Parent.
+Grafik
+49000 115500 0 4.644538 0.619042 0 37500 5000 0 Parent
+203/204/205/206/
+37500 5000
+
+
+
+

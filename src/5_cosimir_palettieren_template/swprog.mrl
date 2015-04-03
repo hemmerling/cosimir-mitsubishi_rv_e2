@@ -1,0 +1,125 @@
+1'Demo Gewichte holen
+5'SWProg
+10 sp 5
+20 MO 435
+25 TBD +1,660	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 660
+26 TBD -1,680	*Ist IN_1 nicht gesetzt,=> 680
+27 SP 15
+40 MO 407
+50 MO 411
+60 SP 10
+70 GO 
+
+90 'Punkt X1 legen
+100 MO 401
+110 GC 
+120 TI 10
+130 SP 15
+140 MO 411,c
+150 MO 407,c
+160 MO 408,c
+170 SP 10
+180 MO 500,c
+190 TI 3
+200 GO 
+210 TI 10
+220 MTS 500,-60.00,O
+230 SP 15
+240 MJ 90.00,0.00,0.00,0.00,0.00,0.00
+250 MO 407
+251 ob -1
+252 ob -2
+
+255 'Punkt X2 legen
+256 mo 430
+261 TBD +1,830	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 830
+262 TBD -1,860	*Ist IN_1 nicht gesetzt,=> 860
+270 SP 10
+280 MO 413
+290 GO 
+310 MO 403
+320 GC 
+330 TI 10
+340 SP 15
+350 MO 413,c
+360 MO 407,c
+370 MO 408,c
+380 SP 10
+390 MO 500,c
+400 TI 3
+410 GO 
+420 TI 10
+430 MTS 500,-60.00,O
+440 SP 15
+450 MJ 90.00,0.00,0.00,0.00,0.00,0.00
+460 MO 407
+461 ob -1
+462 ob -2
+
+469 'Punkt Y legen
+470 mo 430
+471 TBD +1,900	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 900
+472 TBD -1,930	*Ist IN_1 nicht gesetzt,=> 930
+480 SP 10
+490 MO 415
+500 GO 
+
+520 MO 405
+530 GC 
+540 TI 10
+550 SP 15
+560 MO 415,c
+570 MO 407,c
+580 MO 408,c
+590 SP 10
+600 MO 500,c
+610 TI 3
+620 GO 
+630 MTS 500,-60.00,O
+640 SP 15
+650 MO 435
+651 ob -1  	*!OUT_1=1=Band EinsA läuft
+652 ob -2	*!OUT_2=1=Band Eins läuft
+653 tbd +8,980
+654 tbd -8,1000
+656 tbd +6,1030
+657 tbd -6,1050
+659 ed
+660 ob +1	*OUT_1 =1=Band EinsA  hält an (Verknüpfung mit BandRueckw) 
+661 ob +2	*OUT_2 =1=Band Eins hält an
+670 gt 27
+680 ob -1	*!OUT_1=1=Band EinsA läuft (Verknüpfung mit BandAn)
+690 gt 25
+700 ob +2	*OUT_2 =1=Band Eins hält an
+710 gt 27
+720 ob -2	*!OUT_2=1=Band Eins läuft
+730 gt 27
+
+810 gt 659
+820 ed
+830 ob +1	*OUT_1 =1=Band EinsA  hält an (Verknüpfung mit BandRueckw) 
+840 ob +2	*OUT_2 =1=Band Eins hält an
+850 gt 270
+860 ob -1	*!OUT_1=1=Band EinsA läuft (Verknüpfung mit BandAn)
+870 gt 261
+880 ob +2	*OUT_2 =1=Band Eins hält an
+890 gt 270
+891 ed
+900 ob +1	*OUT_1 =1=Band EinsA  hält an (Verknüpfung mit BandRueckw) 
+910 ob +2	*OUT_2 =1=Band Eins hält an
+920 gt 480
+930 ob -1	*!OUT_1=1=Band EinsA läuft (Verknüpfung mit BandAn)
+940 gt 471
+950 ob +2	*OUT_2 =1=Band Eins hält an
+960 gt 480
+970 ed
+980 ob +8
+990 gt 656
+1000 ob -8
+1010 gt 653
+1020 ed
+1030 ob +6
+1040 gt 659
+1050 ob -6
+1060 gt 656
+1070 ed

@@ -1,0 +1,305 @@
+1010  ' **********************************************************
+1020  ' * Industrieroboter-Labor FH Hannover, WS 2005/06
+1030  ' * Leitung: Prof. Dr. Kunze
+1035  ' * Versuch 6: Untersuchungen zum Bahnfahren
+1040  ' * Gruppe 5
+1050  ' * Rolf Hemmerling, #916657
+1060  ' * Lars Durczak, #949640
+1070  ' * Datum: 2005-12-15
+1080  '
+1090  ' * ir6.mrl
+1110  ' **********************************************************
+1120  ' * ? Toollaenge
+1130  ' * ? Wieviel offset fuer SF-Befehl ? 10=1.0cm
+1140  ' * ? Fuer wieviel Verschiebungen insgesamt ist Platz
+1150  ' *   auf dem DIN-A3 Papier ?
+1160  ' * ! Zu teachen: P101 = nahe X/Y Ursprung
+1170  ' *   Zu teachen: P100 = Mitte
+1180  ' * ! Zu teachen: P500.... ( werden nach P600.. umkopiert )
+
+1300  ' **********************************************************
+1310  ' Positionsliste
+1320  ' **********************************************************
+1330  ' * ### Teachen ###: Startpunkt P601:
+1335  ' * PD 601,78,267.2,227.4,-180,0.1,-179.7,R,A,N
+1336  ' * Startpunkt P1:
+1340  PD 101,78,267.2,227.4,-180,0.1,-179.7,R,A,N
+1360  ' * Endpunkt P2:
+1370  PD 102,78,267.2,227.4,-180,0.1,-179.7,R,A,N
+1380  ' * Relative Position fuer Verschiebung der Geraden
+1385  ' * und der kontinuierlichen Figur ( y = 40mm )
+1390  PD 201,0,40,0,0,0,0
+1400  ' * Relative Position fuer die Distanz zwischen P101 und P102 = -250mm
+1410  PD 202,-250,0,0,0,0,0
+1480  ' * ### Teachen ###: Kreismittelpunkt P600:
+1490  ' * PD 600,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1500  ' * Kreismittelpunkt P100:
+1510  PD 100,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1520  ' * Punkt P103 auf dem Kreis
+1530  PD 103,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1540  ' * Punkt P104 auf dem Kreis
+1550  PD 104,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1560  ' * Punkt P105 auf dem Kreis
+1570  PD 105,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1580  ' * Punkt P106 auf dem Kreis
+1590  PD 106,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1600  ' * Relative Position fuer die Distanz zwischen P100 und P103 = 7.5cm
+1610  PD 203,75,0,0,0,0,0
+1620  ' * Relative Position fuer die Distanz zwischen P100 und P104 = 7.5cm
+1630  PD 204,0,75,0,0,0,0
+1640  ' * Relative Position fuer die Distanz zwischen P100 und P105 = 7.5cm
+1650  PD 205,-75,0,0,0,0,0
+1660  ' * Relative Position fuer die Distanz zwischen P100 und P106 = 7.5cm
+1670  PD 206,0,-75,0,0,0,0
+1680  ' * Relative Position fuer Kreis-Verschiebung ( x = 10mm )
+1690  PD 200,10,0,0,0,0,0
+1700  ' * Punkt P134 auf dem Kreis zwischen P103 und P104
+1710  PD 134,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1720  ' * Punkt P104 auf dem Kreis zwischen P104 und P105
+1730  PD 145,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1740  ' * Punkt P105 auf dem Kreis zwischen P105 und P106
+1750  PD 156,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1760  ' * Punkt P163 auf dem Kreis zwischen P106 und P103
+1770  PD 163,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1780  ' * Relative Position fuer die Distanz zwischen P100 und P134 = 7.5cm
+1790  PD 234,53,53,0,0,0,0
+1800  ' * Relative Position fuer die Distanz zwischen P100 und P145 = 7.5cm
+1810  PD 245,-53,53,0,0,0,0
+1820  ' * Relative Position fuer die Distanz zwischen P100 und P156 = 7.5cm
+1830  PD 256,-53,-53,0,0,0,0
+1840  ' * Relative Position fuer die Distanz zwischen P100 und P163 = 7.5cm
+1850  PD 263,53,-53,0,0,0,0
+
+
+1860  ' * Punkt 400, zu teachen
+1870  PD 400,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1880  PD 410,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1890  PD 420,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1900  PD 430,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1910  PD 440,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1920  PD 450,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+1930  PD 460,-107.5,423.9,103.1,180,0.1,-179.7,R,A,N
+
+1940  ' * Punkt 500, Arbeitskopien der geteachten Werte
+1950  PD 500,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+1960  PD 510,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+1970  PD 520,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+1980  PD 530,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+1990  PD 540,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+2000  PD 550,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+2110  PD 560,462.00,-16.80,355.28,-178.40,0.79,122.96,R,A,N
+2699  ' ***************************************
+
+2700  ' ***************************************
+2710  ' * Hauptprogramm
+2720  ' ***************************************
+2730  ' *
+2740  ' * Initialisierung
+2750  GS 9000
+2760  ' * Linearinterpolation
+2770  ' *GS 3000
+2780  ' * Zirkularinterpolation
+2790  GS 5000
+2800  ' * Kontinuierliche Bewegung
+2810  GS 7000
+2999  GT 9998
+
+3000  ' -> Unterprogramm, Aufruf von 2070
+3010  ' ***************************************
+3020  ' * Linearinterpolation
+3030  ' ***************************************
+3040  ' * Erstmals Punkt 601 anfahren, als 101 abspeichern
+3050  SP 5
+3070  MO 601,C
+3080  HE 101
+3090  ' * Mit steigender Geschwindigkeit Linien ziehen
+3200  SP 6
+3210  GS 4000
+3220  SP 10
+3230  GS 4000
+3240  SP 15
+3250  GS 4000
+3260  SP 25
+3270  GS 4000
+3999  RT
+
+4000  ' * -> Unterprogramm, mehrfacher Aufruf von Unterprogramm 3000
+4010  ' ***************************************
+4020  ' * Punkt P101 anfahren.
+4030  ' * Linie von P101 nach P102 zeichnen
+4040  ' * Geschwindigkeit wird vorher eingestellt
+4040  ' ***************************************
+4050  ' * Punkt P1 anfahren
+4060  MO 101,C
+4070  HE 102
+4080  ' * P102 = P101 + P202, Relative Entfernung dazuaddieren
+4090  SF 102,202
+4100  ' * Zielpunkt P2 mit annaehernd gerader Linie anfahren
+4110  MS 102,C
+4120  ' * Warten 1sec
+4130  TI 10
+4140  ' * Zurueckfahren und dabei "nochmal" zeichnen
+4150  MO 101,C
+4160  ' * Stift 20mm nach oben
+4170  MTS 101,-20 
+4180  ' * Warten 1sec
+4190  TI 10
+4200  ' * Verschiebung der beiden Positionen
+4210  SF 101,201
+4220  RT
+
+5000  ' -> Unterprogramm, Aufruf von 2090
+5010  ' ***************************************
+5020  ' * Zirkularinterpolation
+5030  ' ***************************************
+5040  ' * Erstmals Punkt 600 anfahren, als 100 abspeichern
+5050  SP 5
+5060  MO 600,C
+5070  HE 100
+5080  ' * Mit steigender Geschwindigkeit Kreise ziehen
+5200  SP 25
+5210  GS 6000
+5215  RT
+5220  SP 10
+5230  GS 6000
+5240  SP 15
+5250  GS 6000
+5260  SP 6
+5270  GS 6000
+5999  RT
+
+6000  ' * -> Unterprogramm, mehrfacher Aufruf von Unterprogramm 5000
+6010  ' ***************************************
+6020  ' * Kreis zeichnen, mit Kreisbefehl und mit MO-Befehlen
+6030  ' ***************************************
+6040  ' * Punkt 100 anfahren
+6050  MO 100,C
+6060  ' * Warten 1sec
+6070  TI 10 
+6080  ' * P103 = P100, P104 = P100, P105 = P100, P106 = P100
+6090  HE 103
+6100  HE 104
+6110  HE 105
+6120  HE 106
+6130  ' * P134 = P100, P145 = P100, P156 = P100, P163 = P100
+6140  HE 134
+6150  HE 145
+6160  HE 156
+6170  HE 163
+6180  ' * P10x = P100 + P20x, relative Entfernung dazuaddieren
+6190  SF 103,203
+6200  SF 104,204
+6210  SF 105,205
+6220  SF 106,206
+6230  ' * P134 = P100 + P234, relative Entfernung dazuaddieren
+6240  SF 134,234
+6250  SF 145,245
+6260  SF 156,256
+6270  SF 163,263
+6280  ' * Kreis mit Kreisbefehl abfahren
+6290  MR 103, 104, 105,C
+6300  ' * Warten 1sec
+6310  TI 10  
+6320  MR 105, 106, 103,C
+6330  ' * Warten 1sec
+6340  TI 10  
+6350  ' * Kreis mit Move-Befehlen abfahren
+6360  MO 103,C
+6370  ' * Warten 1sec
+6380  TI 10   
+6390  MO 134,C
+6400  ' * Warten 1sec
+6410  TI 10
+6420  MO 104,C
+6430 ' * Warten 1sec
+6440  TI 10
+6450  MO 145,C
+6460 ' * Warten 1sec
+6470  TI 10
+6480  MO 105,C
+6490 ' * Warten 1sec
+6500  TI 10 
+6510  MO 156,C
+6520 ' * Warten 1sec
+6530  TI 10  
+6540  MO 106,C
+6550 ' * Warten 1sec
+6560  TI 10   
+6570  MO 163,C
+6580 ' * Warten 1sec
+6590  TI 10    
+6600  MO 103,C
+6610  ' *' Kreis verschieben
+6620  SF 100,200
+6630  RT
+
+7000  ' -> Unterprogramm, Aufruf von 2110
+7005  ' ***************************************
+7010  ' * Kontinuierliche Bewegung
+7015  ' ***************************************
+7020  ' * Erstmals Punkt 103 anfahren
+7025  SP 5
+7030  MO 103,C
+7035  ' * Teach-Punkte umkopieren
+7040  SP 15
+7045  GS 8500
+7050  ' * Mit steigender Geschwindigkeit kontiniuerliche Bewegugngen machen
+
+7200  SP 15
+7210  GS 8000
+7215  RT
+7220  SP 10
+7230  GS 8000
+7240  SP 6
+7250  GS 8000
+7260  SP 25
+7270  GS 8000
+7999  RT
+
+8000  ' * -> Unterprogramm, Aufruf von Unterprogramm 7000
+8010  ' ***************************************
+8020  ' * Kontinuierliche Bewegung
+8030  ' ***************************************
+8040  ' * Punkt 100 anfahren
+8050  MO 500,C
+8060  ' * Figur verschieben
+8070  SF 500,200
+8080  SF 510,200
+8090  SF 520,200
+8100  SF 530,200
+8110  SF 540,200
+8120  SF 550,200
+8130  SF 560,200
+8140  ' * Bewegung ausfuehren
+8150  MC 500,560 
+8499  RT
+
+8500  ' * -> Unterprogramm, Aufruf von 7045
+8510  ' ***************************************
+8520  ' * Umkopie von "kontinuierlichen" Punkten
+8530  ' ***************************************
+8600  MO 103,C
+8610  HE 500
+8620  MO 104,C
+8630  HE 510
+8640  MO 105,C
+8650  HE 520
+8660  MO 106,C
+8670  HE 540
+8680  MO 103,C
+8690  HE 560
+8999  RT
+
+
+9000  ' -> Unterprogramm, Aufruf von 2050
+9010  ' ***************************************
+9020  ' * Parameter initialisieren
+9030  ' ***************************************
+9040  ' * Toollaenge = ??? 295 ???
+9050  TL 295
+9060  ' * Geschwindigkeit einstellen
+9070  SP 5
+9080  RT
+
+9998  ' Dummy ED, als letzte Anweisung notwendig
+9999  ED
