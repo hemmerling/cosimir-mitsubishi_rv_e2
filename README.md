@@ -3,12 +3,12 @@ Gestaltung von Arbeitszellen, Teachin und Bahnfahren - Simulation mit COSIMIR, p
 
 Die in den Unterverzeichnissen des Ordners "src" Dateien mit der Datei-Extension "mrl" sind selbsterstellte Quelltext-Anweisungen für den Industrieroboter in der Mitsubishi-eigenen Skriptsprache. Die anderen Dateien wurden mittels COSIMIR erstellt.
 
-/src/3_cosimir_arbeitszellen/ir3v003.mrl
-/src/3_cosimir_arbeitszellen/ir3v004.mrl
-/src/5_cosimir_palettieren/ir5v004.mrl
-/src/5_cosimir_palettieren_template/swprog.mrl
-/src/5_cosimir_palettieren_template/testxxyn.mrl
-/src/6_cosimir_bahnfahren/ir6v005.mrl
+- /src/3_cosimir_arbeitszellen/ir3v003.mrl
+- /src/3_cosimir_arbeitszellen/ir3v004.mrl
+- /src/5_cosimir_palettieren/ir5v004.mrl
+- /src/5_cosimir_palettieren_template/swprog.mrl
+- /src/5_cosimir_palettieren_template/testxxyn.mrl
+- /src/6_cosimir_bahnfahren/ir6v005.mrl
 
 ![COSIMIR](/doc/images/0_demo/cosimir_demo.png "COSIMIR") 
 ![COS/src/5_cosimir_palettieren_template/IMIR: 3 Werkstücke auf Fließband](/doc/images/3_arbeitszellen/ir_3auf_fliessband.png "COSIMIR: 3 Werkstücke auf Fließband") 
