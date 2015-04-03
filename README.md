@@ -26,7 +26,7 @@ http://www.mitsubishi-electric.de/
 Die Software “COSIMIR” ( Cell Oriented Simulation of Industrial Robots ), “COSIMOD”, “COSIROB” wird entwickelt am Institut für Roboterforschung ( IRF ) der Technischen Universität Dortmund
 http://www.irf.tu-dortmund.de/
 
-Eine Demo-Version von "COSIMIR" für Windows befindet sich auf kostenlosen Werbe-CDs "Interactive Guide to Festo Didactics" ( 2003 ) und "FESTO COSIMIR - Robotis SImulation Virtual learning environment, Trial version" ( 2000 ) von Festo Didactic GmbH & Co. KG 
+Eine Demo-Version von "COSIMIR" für Windows befindet sich auf kostenlosen Werbe-CDs "Interactive Guide to Festo Didactics" ( 2003 ) und "FESTO COSIMIR - Robotis Simulation Virtual learning environment, Trial version" ( 2000 ) von Festo Didactic GmbH & Co. KG 
 http://www.festo-didactic.com/
 
 Archive.org "EF-Robotertechnik GmbH"
