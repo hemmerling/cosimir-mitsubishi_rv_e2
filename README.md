@@ -3,12 +3,12 @@ Gestaltung von Arbeitszellen, Teachin und Bahnfahren - Simulation mit COSIMIR, p
 
 Die in den Unterverzeichnissen des Ordners abgelegten "src" Dateien mit der Datei-Extension "mrl" sind selbsterstellte Quelltext-Anweisungen für den Industrieroboter in der Mitsubishi-eigenen Skriptsprache. Die anderen Dateien wurden mittels COSIMIR erstellt.
 
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/3_cosimir_arbeitszellen/ir3v003.mrl
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/3_cosimir_arbeitszellen/ir3v004.mrl
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren/ir5v004.mrl
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren_template/swprog.mrl
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren_template/testxxyn.mrl
-- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/6_cosimir_bahnfahren/ir6v005.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/3_cosimir_arbeitszellen/ir3v003.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/3_cosimir_arbeitszellen/ir3v004.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/5_cosimir_palettieren/ir5v004.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/5_cosimir_palettieren_template/swprog.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/5_cosimir_palettieren_template/testxxyn.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/6_cosimir_bahnfahren/ir6v005.mrl
 
 ![COSIMIR](/doc/images/0_demo/cosimir_demo.png "COSIMIR") 
 ![COSIMIR: 3 Werkstücke auf Fließband](/doc/images/3_arbeitszellen/ir_3auf_fliessband.png "COSIMIR: 3 Werkstücke auf Fließband") 
