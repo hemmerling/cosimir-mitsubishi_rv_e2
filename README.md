@@ -5,7 +5,7 @@ Die in den Unterverzeichnissen des Ordners abgelegten "src" Dateien mit der Date
 
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/3_cosimir_arbeitszellen/ir3v003.mrl
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/3_cosimir_arbeitszellen/ir3v004.mrl
-- https//github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren/ir5v004.mrl
+- http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren/ir5v004.mrl
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren_template/swprog.mrl
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/5_cosimir_palettieren_template/testxxyn.mrl
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/src/6_cosimir_bahnfahren/ir6v005.mrl
