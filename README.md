@@ -1,7 +1,7 @@
 # cosimir-mitsubishi_rv_e2
 Gestaltung von Arbeitszellen, Teachin und Bahnfahren - Simulation mit COSIMIR, praktische Durchführung mit dem Industrieroboter „Mitsubishi RV-E2“
 
-Die in den Unterverzeichnissen des Ordners abgelegten "src" Dateien mit der Datei-Extension "mrl" sind selbsterstellte Quelltext-Anweisungen für den Industrieroboter in der Mitsubishi-eigenen Skriptsprache. Die anderen Dateien wurden mittels COSIMIR erstellt.
+Die in den Unterverzeichnissen des Ordners abgelegten "src" Dateien mit der Datei-Extension "mrl" sind selbsterstellte Quelltext-Anweisungen für den Industrieroboter in der Mitsubishi-eigenen Skriptsprache "Mitsubishi Robot Language" ( MRL ). Die anderen Dateien wurden mittels COSIMIR erstellt.
 
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/3_cosimir_arbeitszellen/ir3v003.mrl
 - http://github.com/hemmerling/cosimir-mitsubishi_rv_e2/blob/master/src/3_cosimir_arbeitszellen/ir3v004.mrl
