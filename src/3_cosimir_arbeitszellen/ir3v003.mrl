@@ -47,7 +47,7 @@
 1210  ' *    Entscheidungen "hardcodiert"
 1220  ' * 7) Darf/kann/soll P5 uebersprungen werden beim hin/zurueck?
 1230  ' * 8) Wie wird das Fliessband in COSIMIR angeschaltet ?
-
+1240  ' *
 1300  ' **********************************************************
 1310  ' Positionsliste
 1320  ' **********************************************************
