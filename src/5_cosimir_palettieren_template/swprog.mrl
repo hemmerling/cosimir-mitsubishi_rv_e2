@@ -2,7 +2,7 @@
 5'SWProg
 10 sp 5
 20 MO 435
-25 TBD +1,660	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 660
+25 TBD +1,660	*Ist IN_1 gesetzt(Sensor 2 aktiv),=> 660
 26 TBD -1,680	*Ist IN_1 nicht gesetzt,=> 680
 27 SP 15
 40 MO 407
@@ -32,7 +32,7 @@
 
 255 'Punkt X2 legen
 256 mo 430
-261 TBD +1,830	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 830
+261 TBD +1,830	*Ist IN_1 gesetzt(Sensor 2 aktiv),=> 830
 262 TBD -1,860	*Ist IN_1 nicht gesetzt,=> 860
 270 SP 10
 280 MO 413
@@ -58,7 +58,7 @@
 
 469 'Punkt Y legen
 470 mo 430
-471 TBD +1,900	*Ist IN_1 gestzt(Sensor 2 aktiv),=> 900
+471 TBD +1,900	*Ist IN_1 gesetzt(Sensor 2 aktiv),=> 900
 472 TBD -1,930	*Ist IN_1 nicht gesetzt,=> 930
 480 SP 10
 490 MO 415

@@ -1,16 +1,41 @@
-1010  ' **********************************************************
-1020  ' * Industrieroboter-Labor FH Hannover, WS 2005/06
-1030  ' * Leitung: Prof. Dr. Kunze
-1035  ' * Versuch 3: Simulation Arbeitszellen und Bewegungsablaeufen
-1040  ' * Gruppe 5
-1050  ' * Rolf Hemmerling, #916657
-1060  ' * Lars Durczak, #949640
-1070  ' * Datum: 2005-10-06
-1080  '
-1090  ' * ir3.mrl
-1100  ' * Programm in MRL Mitsubishi Robot Language
-1110  ' **********************************************************
-1120  ' *
+1000  ' * 
+1002  ' * @package   mitsubishi_rv_e2
+1004  ' * @file      ir3v003.mrl
+1006  ' * @brief     Programmierung von Arbeitsablaeufen fuer den 
+1008  ' *            Industrieroboter "Mitsubishi RV-E2"
+1010  ' * @author    Rolf Hemmerling <hemmerling@gmx.net>, Lars Durczak
+1012  ' * @version   1.00, 
+1014  ' *            Mitsubishi Robot Language" ( MRL )
+1016  ' * @date      2015-01-01
+1018  ' * @copyright Apache License, Version 2.0
+1020  ' * 
+1022  ' * ir3v003.mrl - Programmierung von Arbeitsablaeufen fuer den 
+1024  ' *               Industrieroboter "Mitsubishi RV-E2"
+1026  ' *               Industrieroboter-Labor FH Hannover, WS 2005/06
+1028  ' *               Leitung: Prof. Dr. Kunze
+1030  ' *               Versuch 3: Simulation Arbeitszellen 
+1032  ' *                          und Bewegungsablaeufen
+1034  ' *               Gruppe 5
+1036  ' *               Rolf Hemmerling, #916657
+1038  ' *               Lars Durczak, #949640
+1040  ' * 
+1042  ' * Copyright 1995-2015 Rolf Hemmerling, Lars Durczak
+1044  ' *  
+1046  ' * Licensed under the Apache License, Version 2.0 (the "License");
+1048  ' * you may not use this file except in compliance with the License.
+1050  ' * You may obtain a copy of the License at
+1052  ' *  
+1054  ' * http://www.apache.org/licenses/LICENSE-2.0
+1056  ' * 
+1058  ' * Unless required by applicable law or agreed to in writing,
+1060  ' * software distributed under the License is distributed on an
+1062  ' * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+1064  ' * either express or implied.
+1066  ' * See the License for the specific language governing permissions
+1068  ' * and limitations under the License.
+1070  ' * 
+1072  ' * Letztes Update: 2005-10-06
+1074  ' *
 1130  ' * Fragen & notwendige fehlende Anpassungen:
 1140  ' * 1) Eingaenge lesen und warten, bis externes Startsignal
 1150  ' * 2) Geschwindigkeiten 20 und 6,
